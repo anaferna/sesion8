@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="textura-suelo" src="cesped.png">
+        <img id="textura-pared" src="ladrillo.png">
+      </a-assets>
+
+      <!-- Suelo -->
+      <a-plane position="0 0 -5"
+               rotation="-90 0 0"
+               width="10" height="10"
+               material="src: #textura-suelo">
+      </a-plane>
+
+      <!-- Pared -->
+      <a-plane position="0 2 -8"
+               width="8" height="4"
+               material="src: #textura-pared">
+      </a-plane>
+
+      <a-sky color="#DDD"></a-sky>
+    </a-scene>
+  </body>
+</html>
